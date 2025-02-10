@@ -52,15 +52,21 @@ function App() {
           </div>
           <div className="w-[198px]">
             <p className="text-[16px] text-[#495057]">
-            <SemiFiveChart/>
+              <SemiFiveChart />
               Узбекистон тарихи ва маданияти
             </p>
           </div>
           <div className="w-[198px]">
             <p className="text-[16px] text-[#495057]">
-              <SemiSixChart/>
+              <SemiSixChart />
               Аклий салохияти ва мантикий фикрлаш
             </p>
+          </div>
+          <div className="w-[285px] pt-1.5 pb-1.3 pl-12 pr-12">
+            <h2 className="text-[48px] text-[#0956AF]">78%</h2>
+            <button className="bg-[#28A264]  pt-2 pb-2  pl-6 pr-6 rounded-md cursor-pointer">
+              Умумий натижа
+            </button>
           </div>
         </div>
       </div>
