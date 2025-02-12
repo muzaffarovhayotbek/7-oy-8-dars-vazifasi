@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import SemiChart from './components/SemiChart';
-import SemiTwoChart from './components/SemiTwoChart';
-import SemiThreeChart from './components/SemiThree';
-import SemiFour from './components/SemiFour';
-import SemiFiveChart from './components/SemiFive';
-import SemiSixChart from './components/SemiSix';
+import chart1 from './assets/chart1.png';
+import greenChart from './assets/greenChart.png';
+import greenThree from './assets/greenThree.png';
+import yellowChart from './assets/yellowChart.png';
+import blueChart from './assets/blueChart.png';
 
+import greenTwoChart from './assets/greenTwoChart.png';
 function App() {
   return (
     <div>
@@ -24,49 +24,51 @@ function App() {
           <h2 className="w-[1050px] bg-[#DEE2E6] h-[4px]"></h2>
         </div>
 
-        <div className="flex items-center gap-12 mb-12 w-[198px]">
-          <div className="w-[198px]">
-            <SemiChart />
-            <p className="text-[16px] text-[#495057] font-[400] pt-8">
-              Конституциявий-хукукий саводхонлик
-            </p>
-          </div>
-          <div className="w-[198px] flex flex-col pt-8">
-            <SemiTwoChart />
-            <p className="text-[16px] text-[#495057] font-[400]">
-              Ахборот-коммуникация технологиялари
-            </p>
-          </div>
-          <div className="w-[198px] pt-8">
-            <SemiThreeChart />
-            <p className="text-[16px] text-[#495057] font-[400]">
-              Турли сохадаги ислохотлардан хабардорлик
-            </p>
-          </div>
-        </div>
+        <div className="w-[644px] gap-12">
+          <div className="flex items-center  gap-12">
+            <div className="w-[198px] pt-16">
+              <img src={chart1} alt="" width={160} />
+              <p className="text-[16px] text-[#495057] pt-4">
+                Конституциявий-хукукий саводхонлик
+              </p>
+            </div>
 
-        <div className="flex  items-center  gap-12">
-          <div className="w-[198px]">
-            <SemiFour />
-            <p className="text-[16px] text-[#495057]">Узбек тили ва адабиёти</p>
+            <div className="w-[198px] pt-16">
+              <img src={greenChart} alt="" width={160} />
+              <p className="text-[16px] text-[#495057] pt-4">
+                Ахборот-коммуникация технологиялари
+              </p>
+            </div>
+
+            <div className="w-[198px] pt-16">
+              <img src={greenThree} alt="" />
+              <p className="text-[16px] text-[#495057] font-[400] pt-4">
+                Турли сохадаги ислохотлардан хабардорлик
+              </p>
+            </div>
           </div>
-          <div className="w-[198px]">
-            <p className="text-[16px] text-[#495057]">
-              <SemiFiveChart />
-              Узбекистон тарихи ва маданияти
-            </p>
-          </div>
-          <div className="w-[198px]">
-            <p className="text-[16px] text-[#495057]">
-              <SemiSixChart />
-              Аклий салохияти ва мантикий фикрлаш
-            </p>
-          </div>
-          <div className="w-[285px] pt-1.5 pb-1.3 pl-12 pr-12">
-            <h2 className="text-[48px] text-[#0956AF]">78%</h2>
-            <button className="bg-[#28A264]  pt-2 pb-2  pl-6 pr-6 rounded-md cursor-pointer">
-              Умумий натижа
-            </button>
+
+          <div className="flex  items-center gap-12 pt-25">
+            <div className="w-[198px]">
+              <img src={yellowChart} alt="" />
+              <p className="text-[16px] pt-4 text-[#495057] w-[198px] ">
+                Узбек тили ва адабиёти
+              </p>
+            </div>
+
+            <div className="w-[198px]">
+              <img src={blueChart} alt="" />
+              <p className="text-[16px] text-[#495057] font-[400] pt-4 w-[198px] ">
+                Узбекистон тарихи ва маданияти
+              </p>
+            </div>
+
+            <div className="w-[198px]">
+              <img src={greenTwoChart} alt="" />
+              <p className="text-[16px] text-[#495057] font-[400] pt-4">
+                Аклий салохияти ва мантикий фикрлаш
+              </p>
+            </div>
           </div>
         </div>
       </div>
